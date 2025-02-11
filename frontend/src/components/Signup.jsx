@@ -43,7 +43,7 @@ function Signup() {
     <>
       <div className="flex h-screen items-center justify-center">
         <div className="md:w-[600px] w-[400px]">
-          <div className="modal-box">
+          <div className="modal-box dark:text-black">
             <form onSubmit={handleSubmit(onSubmit)} method="dialog">
               {/* Close button for the modal */}
               <Link
