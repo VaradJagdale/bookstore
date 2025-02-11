@@ -52,13 +52,13 @@ function Login() {
 
             <h3 className="font-bold text-lg dark:text-black">Login</h3>
             {/* Email */}
-            <div className="mt-4 space-y-2">
+            <div className="mt-4 space-y-2"> 
               <span>Email</span>
               <br />
               <input
                 type="email"
                 placeholder="Enter your email"
-                className="w-80 px-3 py-1 border rounded-md outline-none"
+                className="md:w-80 px-3 py-1 border rounded-md outline-none w-[300px]"
                 {...register("email", { required: true })}
               />
               <br />
@@ -75,7 +75,7 @@ function Login() {
               <input
                 type="password"
                 placeholder="Enter your password"
-                className="w-80 px-3 py-1 border rounded-md outline-none"
+                className="md:w-80 px-3 py-1 border rounded-md outline-none w-[300px]"
                 {...register("password", { required: true })}
               />
               <br />

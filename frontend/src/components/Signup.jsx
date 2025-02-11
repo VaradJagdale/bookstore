@@ -42,7 +42,7 @@ function Signup() {
   return (
     <>
       <div className="flex h-screen items-center justify-center">
-        <div className="w-[600px]">
+        <div className="md:w-[600px] w-[400px]">
           <div className="modal-box">
             <form onSubmit={handleSubmit(onSubmit)} method="dialog">
               {/* Close button for the modal */}
@@ -62,7 +62,7 @@ function Signup() {
                 <input
                   type="text"
                   placeholder="Enter your fullname"
-                  className="w-80 px-3 py-1 border rounded-md outline-none"
+                  className="md:w-80 px-3 py-1 border rounded-md outline-none w-[300px]"
                   {...register("fullname", { required: true })}
                 />
                 <br />
@@ -78,7 +78,7 @@ function Signup() {
                 <input
                   type="email"
                   placeholder="Enter your email"
-                  className="w-80 px-3 py-1 border rounded-md outline-none"
+                  className="md:w-80 px-3 py-1 border rounded-md outline-none w-[300px]"
                   {...register("email", { required: true })}
                 />
                 <br />
@@ -94,7 +94,7 @@ function Signup() {
                 <input
                   type="password" 
                   placeholder="Enter your password"
-                  className="w-80 px-3 py-1 border rounded-md outline-none"
+                  className="md:w-80 px-3 py-1 border rounded-md outline-none w-[300px]"
                   {...register("password", { required: true })}
                 />
                 <br />
